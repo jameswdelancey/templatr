@@ -1,0 +1,32 @@
+{
+    "globalSettings": {
+        "outputLanguages": ["python"],
+        "baseOutputDirectory": "./generated_code",
+		"baseTemplateDirectory": "./templates"
+    },
+	"templates": {
+		"type": {
+			"name": "type",
+			"language": "python",
+			"filePath": "type.py",
+			"requiredVars": ["extraMethods"]
+		}
+	},
+    "programs": [
+        {
+            "name": "program1",
+			"language": "python",
+            "files": [
+				{
+					"name": "type3",
+					"template": "type",
+					"fileNameFormat": "{{className}}.py",
+					"vars": {
+						"world": "earth",
+						"extraMethods": []
+					}
+				}
+            ]
+        }
+    ]
+}

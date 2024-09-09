@@ -1,0 +1,12 @@
+projects:
+  project1:
+    - template: "templates/class_template.j2"
+      variables: "variables/project1_class1.yaml"
+      output: "src/project1/class1.py"
+  project2:
+    - template: "templates/class_template.j2"
+      variables: "variables/project2_class1.yaml"
+      output: "src/project2/class1.py"
+    - template: "templates/class_template.j2"
+      variables: "variables/project2_class2.yaml"
+      output: "src/project2/class2.py"
